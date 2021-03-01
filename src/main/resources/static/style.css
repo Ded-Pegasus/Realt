@@ -1,0 +1,14 @@
+.carousel-inner img {
+    display: block;
+    width: 600px;
+    height: 350px !important;
+    margin: 0 auto;
+}
+
+.wrap {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 500px;
+    border: solid 1px;
+}
