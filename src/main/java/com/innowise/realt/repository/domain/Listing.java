@@ -1,11 +1,15 @@
 package com.innowise.realt.repository.domain;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.Where;
 import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
+@Setter
+@Getter
 @Entity
 @Where(clause = "DELETED = false")
 public class Listing {
@@ -70,73 +74,5 @@ public class Listing {
         } else {
             return "<none>";
         }
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
-    public void setAuthor(User author) {
-        this.author = author;
-    }
-
-    public String getFilename() {
-        return filename;
-    }
-
-    public void setFilename(String filename) {
-        this.filename = filename;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getFilename1() {
-        return filename1;
-    }
-
-    public void setFilename1(String filename1) {
-        this.filename1 = filename1;
-    }
-
-    public String getFilename2() {
-        return filename2;
-    }
-
-    public void setFilename2(String filename2) {
-        this.filename2 = filename2;
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String coast) {
-        this.price = coast;
     }
 }

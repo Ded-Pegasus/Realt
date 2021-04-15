@@ -1,6 +1,5 @@
 package com.innowise.realt.controllers;
 
-import com.innowise.realt.model.ValidFunctions;
 import com.innowise.realt.repository.UserRepository;
 import com.innowise.realt.repository.domain.User;
 import com.innowise.realt.service.ProfileService;
@@ -8,12 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.util.Map;
 
 @Controller
 public class ProfileController {
